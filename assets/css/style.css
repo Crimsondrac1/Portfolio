@@ -48,11 +48,13 @@ header {
     z-index: 9999;
     opacity: .65;
     fill-opacity: var(--bkg-color);
+    transition: .5s ease;
 }
 
 header:hover {
     opacity: 1;
-    background-image: url("");
+    /* background-image: url(""); */
+    transition: .5s ease;
 }
 
 header h1 {
@@ -110,7 +112,6 @@ section {
     align-items: flex-end;
     background-attachment: fixed;
     height: 500px;
-    
 }
 
 .hero p {
@@ -130,7 +131,8 @@ section {
 /* Start About styles */
 
 .about {
-    margin-left: 100px;
+    border: 1px solid white;
+    /* margin-left: 100px; */
     display: flex;
     width: 80%;
     align-items: flex-start;
@@ -138,20 +140,23 @@ section {
 }
 
 .about h2 {
+    border: 1px solid white;
     font-size: 50px;
     text-align: right;
     justify-content: flex-start;
-    width: auto;
-    padding: 20px;
+    width: 30%;
+    padding-right: 20px;
+    margin-left: 50px;
 }
 
 .about p {
     border-left: 5px solid var(--primary-color);
-    padding: 20px;
+    padding-left: 20px;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
     text-align: justify;
     flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .about p span {
@@ -162,30 +167,107 @@ section {
 
 /* Start Work Styles */
 
+.work {
+    border: 1px solid white;
+    display: flex;
+    /* margin-left: 100px; */
+    width: 80%;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+}
+
+.work h2 {
+    display: flex;
+    border: 1px solid white;
+    font-size: 50px;
+    text-align: right;
+    justify-content: flex-start;
+    width: 30%S;
+    padding-right: 20px;
+}
+
+.work div {
+  
+    width: 80%;
+}
+
+.projects {
+    border-left: 5px solid var(--primary-color);
+    align-items: flex-start;
+    justify-content: right;
+}
+
+.run-buddy-img {
+    position: relative;
+    display: flex;
+    height: 375px;
+    
+    justify-content: left;
+    margin-left: 20px;
+    opacity: .5;
+    transition: .5s ease;
+}
+
+.run-buddy-img:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.run-buddy {
+    /* border: 2px solid white;
+    background-image: url("../images/runbuddy.jpg");
+    align-self: flex-end;
+    background-size: auto 400px;
+    padding: 150px 0;
+    margin-left: 20px;
+    flex-wrap: wrap;
+    opacity: .5;
+    transition: .5s ease; */
+}
+
+.run-buddy:hover {
+    /* background-image: url("../images/runbuddy.jpg"); */
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.run-buddy h3, .run-buddy p {
+    position: relative;
+    bottom: 115px;
+    left: 50px;
+    background-color: var(--bkg-color);
+    width: 130px;
+    opacity: .5;
+    fill-opacity: var(--bkg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.run-buddy h3 {
+
+}
 /* End Work Styles */
 
 /* Start Footer */
 footer {
-    background: var(--primary-color);
+    background: var(--secondary-color);
     width: 100%;
-    padding: 40px 35px;
+    padding: 10px 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    opacity: .5;
 }
 
-footer h2 {
-    color: #023e76;
-    font-size: 30px;
+footer h4 {
+    color: #8ec8ff;
+    font-size: 15px;
     margin: 0;
 }
 
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: var(--secondary-color);
-}
 /* End Footer */
