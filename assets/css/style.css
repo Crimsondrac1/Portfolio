@@ -131,25 +131,29 @@ section {
 /* Start About styles */
 
 .about {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     /* margin-left: 100px; */
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 80%;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .about h2 {
-    border: 1px solid white;
+    flex: 1 0 20%;
+    /* border: 1px solid white; */
     font-size: 50px;
     text-align: right;
     justify-content: flex-end;
     width: 30%;
     padding-right: 20px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 
 .about p {
+    flex: 2 0 70%;
     border-left: 5px solid var(--primary-color);
     padding-left: 20px;
     font-size: 20px;
@@ -168,78 +172,236 @@ section {
 /* Start Work Styles */
 
 .work {
-    border: 1px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid white; */
     display: flex;
     /* margin-left: 100px; */
     width: 80%;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: nowrap;
     
 }
 
 .work h2 {
-    display: flex;
-    border: 1px solid white;
+    
+    /* border: 1px solid white; */
     font-size: 50px;
     text-align: right;
     justify-content: flex-end;
     width: 30%;
     padding-right: 20px;
-    flex: 0 0 26%;
-}
-
-.work div {
-  
-    width: 80%;
+    flex: 0 0 20%;
+    /* margin-left: 50px; */
+    flex-wrap: nowrap;
 }
 
 .projects {
+    /* border: 1px solid white; */
+    display: flex;
     border-left: 5px solid var(--primary-color);
     align-items: flex-start;
-    justify-content: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.run-buddy-img {
-    position: relative;
-    display: flex;
-    height: 375px;
-    flex: 1 0 100%;
-    justify-content: left;
+.proj1 {
+    height: 440px;
+}
+
+.proj1 img {
+    /* position: relative; */
+    /* display: flex;  */
+    width: 100%;
+    height: auto;
+    flex: 2 0 50%;
+    justify-content: space-between;
+    align-items: stretch;
     margin-left: 20px;
     opacity: .5;
     transition: .5s ease;
+    border-radius: 30px;
 }
 
-.run-buddy-img:hover {
+.proj1 img:hover {
     opacity: 1;
     transition: .5s ease;
 }
 
-.run-buddy:hover {
+/* .proj1:hover {
     opacity: 1;
     transition: .5s ease;
-}
+} */
 
-.run-buddy h3, .run-buddy p {
+.proj1 h3 {
     position: relative;
     bottom: 115px;
-    left: 50px;
+    left: 60px;
     background-color: var(--bkg-color);
-    width: 130px;
-    opacity: .5;
-    fill-opacity: var(--bkg-color);
+    width: 150px;
+    opacity: .8;
+    fill-opacity: var(--bkg-Scolor);
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
     padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--primary-color);
+    line-height: 1.5;
+    text-align: center;
 }
 
-.run-buddy h3 {
-
-}
 /* End Work Styles */
+
+/* START Project2 */
+
+.proj2 {
+    /* border: 1px solid white; */
+    display: flex;
+    width: 49%;
+    margin: 5px 0px 5px 0px;
+    justify-content: flex-start;
+}
+
+.proj2 img {
+    
+    /* position: relative; */
+    /* display: flex; */
+    width: 100%;
+    /* max-width: 30%; */
+    height: auto; 
+    flex: 0 0 50%;
+    /* justify-content: space-between; */
+    margin-left: 20px;
+    opacity: .5;
+    transition: .5s ease;
+    border-radius: 30px;
+    /* flex-wrap: nowrap; */
+}
+
+.proj2 img:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+/* .proj2:hover {
+    opacity: 1;
+    transition: .5s ease;
+} */
+
+.proj2 h3 {
+    position: relative;
+    bottom: -180px;
+    left: -480px;
+    background-color: var(--bkg-color);
+    width: 180px;
+    height: 80px;
+    opacity: .8;
+    fill-opacity: var(--bkg-color); 
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* Start Contact Me */
+.contact {
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid white; */
+    /* margin-left: 100px; */
+    display: flex;
+    width: 80%;
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h2 {
+    /* border: 1px solid white; */
+    border-right: 5px solid var(--primary-color);
+    font-size: 50px;
+    text-align: right;
+    justify-content: flex-start;
+    width: 30%;
+    padding-right: 20px;
+    flex: 0 0 20%;
+    margin-left: 50px;
+    flex-wrap: nowrap;
+}
+
+.phone {
+    /* border: 1px solid white; */
+    justify-content: center;
+    text-align: center;
+    flex: 1 0 20%;
+    align-items: center;
+    align-self: center;
+    font-size: 24px;
+    /* height: 50%; */    
+}
+
+.phone a {
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.email {
+    /* border: 1px solid white; */
+    justify-content: center;
+    flex: 1 0 30%;
+    font-size: 24px;
+     text-align: center;
+}
+.email a {
+    border-bottom: 4px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+.link1, .link2 {
+    /* border: 1px solid white; */
+    width: 100%;
+    flex: 1 0 17%;
+    text-align: center;
+}
+
+.link1 a, .link2 a {
+    /* border: 1px solid white; */
+    justify-content: center;
+    /* flex: 1 0 100%; */
+    font-size: 24px;
+    /* padding-right: 100px; */
+    padding-bottom: 5px;
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.link1 a:hover, .link2 a:hover {
+    text-decoration: underline;
+    color: #8ec8ff;
+}
+
+.links a:active, .link2 a:active {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.links a:visited, .link2 a:visited {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+.links a:link, .link2 a:link {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 
 /* Start Footer */
 footer {
