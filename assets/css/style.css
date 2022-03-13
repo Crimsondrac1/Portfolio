@@ -35,8 +35,9 @@ a:hover {
 header {
     padding: 20px 35px;
     background-color: var(--tertiary-color);
+    /* color: white; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     flex-wrap: wrap;
     position: -webkit-sticky;
     position: sticky;
@@ -60,15 +61,25 @@ header:hover {
 header h1 {
     font-weight: bold;
     font-size: 35px;
-    color: var(--primary-color);
+    color: white;
     margin: 0;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+
 }
 
-header a {
-    text-decoration: none;
-    color: var(--primary-color);
+header h1 img {
+    /* display: flex; */
+    width: 100px;
+    height: 100px;
 }
+
+header h1 span {
+    text-decoration: none;
+    color: white;
+    vertical-align: top;
+}
+
 
 header nav {
     margin: 7px 0;
