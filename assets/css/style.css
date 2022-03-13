@@ -153,7 +153,7 @@ section {
 }
 
 .about p {
-    flex: 2 0 70%;
+    flex: 2 0 80%;
     border-left: 5px solid var(--primary-color);
     padding-left: 20px;
     font-size: 20px;
@@ -334,7 +334,7 @@ section {
     width: 30%;
     padding-right: 20px;
     flex: 0 0 20%;
-    margin-left: 50px;
+    /* margin-left: 30px; */
     flex-wrap: nowrap;
 }
 
@@ -357,7 +357,7 @@ section {
 .email {
     /* border: 1px solid white; */
     justify-content: center;
-    flex: 1 0 30%;
+    flex: 1 0 20%;
     font-size: 24px;
      text-align: center;
 }
@@ -369,11 +369,12 @@ section {
 .link1, .link2 {
     /* border: 1px solid white; */
     width: 100%;
-    flex: 1 0 17%;
+    flex: 1 0 20%;
     text-align: center;
 }
 
 .link1 a, .link2 a {
+    
     /* border: 1px solid white; */
     justify-content: center;
     /* flex: 1 0 100%; */
@@ -381,26 +382,6 @@ section {
     /* padding-right: 100px; */
     padding-bottom: 5px;
     border-bottom: 4px solid var(--primary-color);
-}
-
-.link1 a:hover, .link2 a:hover {
-    text-decoration: underline;
-    color: #8ec8ff;
-}
-
-.links a:active, .link2 a:active {
-    text-decoration: none;
-    color: blueviolet;
-}
-
-.links a:visited, .link2 a:visited {
-    text-decoration: none;
-    color: cadetblue;
-}
-
-.links a:link, .link2 a:link {
-    text-decoration: none;
-    color: var(--primary-color);
 }
 
 /* Start Footer */
