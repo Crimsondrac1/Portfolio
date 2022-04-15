@@ -304,6 +304,59 @@ section {
 
 .proj2 h3 {
     position: relative;
+    bottom: 120px;
+    left: 50px;
+    background-color: var(--bkg-color);
+    width: 180px;
+    height: 80px;
+    opacity: .8;
+    fill-opacity: var(--bkg-color); 
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 30px;
+    border: 2px solid var(--primary-color);
+    text-align: center;
+    flex-wrap: wrap;
+}
+.proj3 {
+    /* border: 1px solid white; */
+    display: flex;
+    width: 49%;
+    margin: 5px 0px 5px 0px;
+    justify-content: flex-start;
+}
+
+.proj3 img {
+    
+    /* position: relative; */
+    /* display: flex; */
+    width: 100%;
+    /* max-width: 30%; */
+    height: auto; 
+    flex: 0 0 50%;
+    /* justify-content: space-between; */
+    margin-left: 20px;
+    opacity: .5;
+    transition: .5s ease;
+    border-radius: 30px;
+    /* flex-wrap: nowrap; */
+}
+
+.proj3 img:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+/* .proj2:hover {
+    opacity: 1;
+    transition: .5s ease;
+} */
+
+.proj3 h3 {
+    position: relative;
     bottom: -180px;
     left: -480px;
     background-color: var(--bkg-color);
