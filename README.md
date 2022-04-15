@@ -7,6 +7,7 @@ This is the professional profile for Doug Erickson to showcase the talets and ab
 
 You may view a screenshot of the site here:
 https://crimsondrac1.github.io/Portfolio/ScrnShot_01.jpg
+![plot](./ScrnShot_01.jpg)
 
 
 Or you can visit the site here:
