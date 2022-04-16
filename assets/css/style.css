@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 :root {
@@ -146,15 +147,16 @@ section {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    width: 80%;
-    align-items: stretch;
-    justify-content: space-around;
+    width: 90%;
+    /* align-items: stretch; */
+    /* justify-content: space-around; */
 }
 
 .about h2 {
-    flex: 1 0 20%;
+    flex: 1 1 20%;
     /* border: 1px solid white; */
-    font-size: 50px;
+    display: flex;
+    font-size: 40px;
     text-align: right;
     justify-content: flex-end;
     width: 30%;
@@ -163,8 +165,8 @@ section {
 }
 
 .about p {
-    flex: 2 0 80%;
-    border-left: 5px solid var(--primary-color);
+    flex: 3 3 80%;
+    
     padding-left: 20px;
     font-size: 20px;
     width: 100%;
@@ -177,6 +179,10 @@ section {
     font-style: italic;
 }
 
+.aboutSec {
+    border-left: 5px solid var(--primary-color);
+}
+
 /* End About Styles */
 
 /* Start Work Styles */
@@ -187,7 +193,7 @@ section {
     /* border: 1px solid white; */
     display: flex;
     /* margin-left: 100px; */
-    width: 80%;
+    width: 90%;
     align-items: stretch;
     justify-content: center;
     flex-wrap: nowrap;
@@ -197,7 +203,7 @@ section {
 .work h2 {
     
     /* border: 1px solid white; */
-    font-size: 50px;
+    font-size: 40px;
     text-align: right;
     justify-content: flex-end;
     width: 30%;
@@ -229,7 +235,7 @@ section {
     flex: 2 0 50%;
     justify-content: space-between;
     align-items: stretch;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     opacity: .5;
     transition: .5s ease;
     border-radius: 30px;
@@ -285,7 +291,7 @@ section {
     height: auto; 
     flex: 0 0 50%;
     /* justify-content: space-between; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     opacity: .5;
     transition: .5s ease;
     border-radius: 30px;
@@ -338,7 +344,7 @@ section {
     height: auto; 
     flex: 0 0 50%;
     /* justify-content: space-between; */
-    margin-left: 20px;
+    /* margin-left: 20px; */
     opacity: .5;
     transition: .5s ease;
     border-radius: 30px;
