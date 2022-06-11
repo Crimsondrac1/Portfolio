@@ -222,9 +222,10 @@ header nav ul li a:hover {
     /* flex-direction: row; */
 }
 
-/* .proj1 {
-    height: 440px;
-} */
+.proj1 {
+    opacity: .5;
+    transition: .5s ease;
+}
 
 .proj1 img {
     /* position: relative; */
@@ -235,13 +236,12 @@ header nav ul li a:hover {
     justify-content: space-between;
     align-items: stretch;
     /* margin-left: 20px; */
-    opacity: .5;
-    transition: .5s ease;
+    
     border-radius: 30px;
     margin: 10px;
 }
 
-.proj1 img:hover {
+.proj1:hover {
     opacity: 1;
     transition: .5s ease;
 }
@@ -257,7 +257,6 @@ h3 {
     /* bottom: 115px; */
     /* left: 60px; */
     background-color: var(--bkg-color);
-    font-size: ;
     /* width: 150px; */
     opacity: .8;
     fill-opacity: var(--bkg-Scolor);
@@ -283,6 +282,8 @@ h3 {
     width: 49%;
     margin: 0px 5px 0px 5px;
     height: 245px;
+    opacity: .5;
+    transition: .5s ease;
     /* justify-content: flex-start; */
 }
 
@@ -296,13 +297,12 @@ h3 {
     flex: 0 1 100%;
     justify-content: space-between;
     /* margin-left: 20px; */
-    opacity: .5;
-    transition: .5s ease;
+    
     border-radius: 30px;
     /* flex-wrap: nowrap; */
 }
 
-.proj2 img:hover {
+.proj2:hover {
     opacity: 1;
     transition: .5s ease;
 }
