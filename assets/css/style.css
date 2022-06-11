@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 :root {
@@ -25,11 +25,11 @@ a:link {
 }
 
 a:visited {
-    color: #5dbb9c;
+    color: rgb(93, 187, 156);
 }
 
 a:hover {
-    color: #9eff91;
+    color: rgb(158, 255, 145);
 }
 
 /* Start Header */
@@ -145,35 +145,28 @@ header nav ul li a:hover {
     /* margin-left: 100px; */
     margin-left: auto;
     margin-right: auto;
+    /* border: 1px solid white; */
     display: flex;
-    flex: 1 1 20%;
+    /* margin-left: 100px; */
     width: 90%;
     /* align-items: stretch; */
     /* justify-content: space-around; */
+    
 }
 
 .about h2 {
-    flex: 1 1 20%;
+    flex: 2 2 50%;
     /* border: 1px solid white; */
     display: flex;
-    font-size: 40px;
+    font-size: 2vw;
     text-align: right;
     justify-content: flex-end;
-    width: 30%;
-    padding-right: 20px;
+    /* width: 100%; */
+    /* padding-right: 20px; */
     /* margin-left: 50px; */
 }
 
-.about p {
-    flex: 3 3 80%;    
-    padding-left: 20px;
-    font-size: 20px;
-    width: 55vw;
-    flex: 1 1 20%;
-    text-align: justify;
-    flex-wrap: wrap;
-    align-items: flex-end;
-}
+
 
 .about p span {
     font-style: italic;
@@ -182,6 +175,11 @@ header nav ul li a:hover {
 .aboutSec {
     border-left: 5px solid var(--primary-color);
     margin-bottom: 10px;
+    flex: 3 6 100%;    
+    padding: 20px;
+    font-size: 1.2vw;
+    /* width: 100%; */
+    text-align: justify;
 }
 
 /* End About Styles */
@@ -192,38 +190,44 @@ header nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     /* border: 1px solid white; */
-    display: flex;
+    /* display: flex; */
     /* margin-left: 100px; */
     width: 90%;
     /* align-items: stretch; */
-    /* justify-content: center; */
+    /* justify-content: space-between; */
     /* flex-wrap: nowrap; */
     
 }
 
 .work h2 {
-    flex: 1 1 20%;
+    flex: 2 2 100%;
     /* border: 1px solid white; */
-    display: flex;
-    font-size: 40px;
+    
+    font-size: 2vw;
     text-align: right;
     justify-content: flex-end;
-    width: 30%;
-    padding-right: 20px;
+    /* width: 100%; */
+    /* padding-right: 20px; */
     /* margin-left: 50px; */
 }
 
 .projects {
     /* border: 1px solid white; */
-    display: flex;
+    /* display: flex; */
     border-left: 5px solid var(--primary-color);
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
+    margin-bottom: 10px;
+    /* align-items: flex-start; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
 }
 
-.proj1  {
+.proj1 {
+    opacity: .5;
+    transition: .5s ease;
+}
+
+.proj1 img {
     /* position: relative; */
     /* display: flex;  */
     width: 98%;
@@ -232,8 +236,7 @@ header nav ul li a:hover {
     justify-content: space-between;
     align-items: stretch;
     /* margin-left: 20px; */
-    opacity: .5;
-    transition: .5s ease;
+    
     border-radius: 30px;
     margin: 10px;
 }
@@ -243,9 +246,11 @@ header nav ul li a:hover {
     transition: .5s ease;
 }
 
-.proj1 img {
-    border-radius: 30px;
-}
+
+/* .proj1:hover {
+    opacity: 1;
+    transition: .5s ease;
+} */
 
 h3 {
     /* position: relative; */
@@ -270,15 +275,25 @@ h3 {
 /* End Work Styles */
 
 /* START Project2 */
+
 .proj2 {
+    /* border: 1px solid white; */
+    /* display: flex; */
+    width: 49%;
+    margin: 0px 5px 0px 5px;
+    height: 245px;
+    /* justify-content: flex-start; */
+}
+
+.proj2 img {
     
     /* position: relative; */
     /* display: flex; */
     width: 100%;
     /* max-width: 30%; */
     height: auto; 
-    flex: 0 0 50%;
-    /* justify-content: space-between; */
+    flex: 0 1 100%;
+    justify-content: space-between;
     /* margin-left: 20px; */
     opacity: .5;
     transition: .5s ease;
@@ -286,62 +301,68 @@ h3 {
     /* flex-wrap: nowrap; */
 }
 
-.proj2:hover {
+.proj2 img:hover {
     opacity: 1;
     transition: .5s ease;
 }
 
-.proj2 img {
-    border-radius: 30px;
-}
-
-/* Start Contact Me */
-.contact {
+ /* Start Contact Me */
+ .contact {
     margin-left: auto;
     margin-right: auto;
     /* border: 1px solid white; */
     /* margin-left: 100px; */
-    display: flex;
+    /* display: flex; */
     width: 90%;
-    /* height: 180px; */
+    
+    height: 100%;
     /* align-items: center; */
     /* justify-content: center; */
 }
 
 .contact h2 {
-    display: flex;
-    border-right: 5px solid var(--primary-color);
-    font-size: 40px;
+    /* flex: 2 2 50%; */
+    /* border: 1px solid white; */
+    
+    font-size: 2vw;
+    /* text-align: right; */
+    /* justify-content: flex-end;  */
+    /* display: flex; */
+    
+    /* font-size: 2.25vw; */
     text-align: right;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 0px 30px 0px 0px;    
-    flex: 2 2 35%;
-    margin-left: 17px;
-    flex-wrap: nowrap;
+    /* justify-content: flex-end; */
+    /* width: 100%; */
+    /* padding: 0px 30px 0px 10px;     */
+   
+    /* margin-left: 2px; */
+    /* flex-wrap: nowrap; */
 }
 
 .info-box {
-    display: flex;
-    justify-content: space-around;
-    /* width: 20%; */
-    flex: 1 0 20%;
-    text-align: center;
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* list-style: none;  */
+    border-left: 5px solid var(--primary-color);
+    width: 100%;
+    /* flex: 3 2 100%; */
+    padding-top: 20px;
     /* border: 1px solid white; */
-    flex: 1 2 100%;
+    /* flex: 1 5 50%; */
     font-size: 1.3vw;
-    /* padding-right: 10px;
-    padding-bottom: 5px; */
-
+    /* margin: auto 0px; */
 }
 
 .link1 {
-    display: flex;
-    align-content: center;
-    margin: auto 0 auto 0;
+    /* display: flex; */
+    /* justify-content: space-around; */
+    text-align: center;
     /* padding: 10px; */
     /* margin: 10px; */
     border-bottom: 4px solid var(--primary-color);
+    /* list-style: none; */
 }
 
 /* Start Footer */
@@ -363,168 +384,3 @@ footer h4 {
 
 /* End Footer */
 
-@media only screen and (max-width: 912px){
-        
-    header nav ul li a {
-        padding: 10px 15px;
-        font-weight: lighter;
-        font-size: 3vw;
-        /* font-size: 1.55vw; */
-        text-shadow: 0 0 10px #00000080;
-    }
-    
-    header nav ul li a:hover {
-        background: var(--primary-color);
-        color: var(--secondary-color);
-        border-radius: 15px;
-        text-shadow: none;
-    }
-
-    .info-box {
-        width: 100%;
-        flex: 1 1 20%;
-        text-align: center;
-        /* border: 1px solid white; */
-        justify-content: space-between;
-        /* flex: 1 0 100%; */
-        font-size: 2vw;
-        /* padding-right: 100px; */
-        padding-bottom: 5px;
-        border-bottom: 4px solid var(--primary-color);
-    }
-    .contact {
-        margin-left: auto;
-        margin-right: auto;
-        /* border: 1px solid white; */
-        /* margin-left: 100px; */
-        display: flex;
-        width: 90%;
-        /* height: 180px; */
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .contact h2 {
-        display: flex;
-        border-right: 5px solid var(--primary-color);
-        font-size: 3vw;
-        text-align: right;
-        justify-content: flex-end;
-        width: 40%;
-        padding-right: 20px;
-        flex: 1 1 20%;
-        /* margin-left: 30px; */
-        flex-wrap: nowrap;
-    }
-
-    .about h2 {
-        flex: 1 1 20%;
-        /* border: 1px solid white; */
-        display: flex;
-        font-size: 3vw;
-        text-align: right;
-        justify-content: flex-end;
-        width: 30%;
-        padding-right: 20px;
-        /* margin-left: 50px; */
-    }
-
-    .work h2 {
-        flex: 2 2 20%;
-        /* border: 1px solid white; */
-        display: flex;
-        font-size: 3vw;
-        text-align: right;
-        justify-content: flex-end;
-        width: 30%;
-        padding-right: 20px;
-        /* margin-left: 50px; */
-    }
-    
- }
-
- @media only screen and (max-width: 768px){
-
-    .about {
-        /* border: 1px solid white; */
-        /* margin-left: 100px; */
-        /* margin-left: auto; */
-        /* margin-right: auto; */
-        /* display: flex; */
-        /* width: 90%; */
-        /* align-items: stretch; */
-        /* justify-content: space-around; */
-    }
-
-    .aboutSec {
-        border-left: 5px solid var(--primary-color);
-        margin-bottom: 10px;
-        width: 70%;
-    }
-
-    .info-box {
-        width: 100%;
-        flex: 1 1 20%;
-        text-align: center;
-        /* border: 1px solid white; */
-        justify-content: space-between;
-        /* flex: 1 0 100%; */
-        font-size: 2vw;
-        /* padding-right: 100px; */
-        padding-bottom: 5px;
-        border-bottom: 4px solid var(--primary-color);
-    }
-    .contact {
-        margin-left: auto;
-        margin-right: auto;
-        /* border: 1px solid white; */
-        /* margin-left: 100px; */
-        display: flex;
-        width: 90%;
-        /* height: 180px; */
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .contact h2 {
-        display: flex;
-        border-right: 5px solid var(--primary-color);
-        font-size: 3vw;
-        text-align: right;
-        justify-content: flex-end;
-        width: 40%;
-        padding-right: 20px;
-        flex: 1 1 20%;
-        /* margin-left: 30px; */
-        flex-wrap: nowrap;
-    }
-
-    .about h2 {
-        flex: 1 1 20%;
-        /* border: 1px solid white; */
-        display: flex;
-        font-size: 3vw;
-        text-align: right;
-        justify-content:center;
-        width: 50%;
-        padding-right: 20px;
-        /* margin-left: 50px; */
-    }
-
-    .work h2 {
-        flex: 2 2 20%;
-        /* border: 1px solid white; */
-        display: flex;
-        font-size: 3vw;
-        text-align: right;
-        justify-content: flex-end;
-        width: 30%;
-        padding-right: 20px;
-        /* margin-left: 50px; */
-    }
-    
- }
-    
-
-    
- 
