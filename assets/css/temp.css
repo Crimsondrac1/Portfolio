@@ -1,0 +1,54 @@
+@media screen and (max-width: 912px) {
+    
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 3vw;
+        /* font-size: 1.55vw; */
+        text-shadow: 0 0 10px #00000080;
+    }
+    
+    header nav ul li a:hover {
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 15px;
+        text-shadow: none;
+    }
+
+    .info-box {
+        width: 100%;
+        flex: 1 0 20%;
+        text-align: center;
+        /* border: 1px solid white; */
+        justify-content: center;
+        /* flex: 1 0 100%; */
+        font-size: 2vw;
+        /* padding-right: 100px; */
+        padding-bottom: 5px;
+        border-bottom: 4px solid var(--primary-color);
+    }
+    .contact {
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid white; */
+        /* margin-left: 100px; */
+        display: flex;
+        width: 98%;
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact h2 {
+        /* border: 1px solid white; */
+        border-right: 5px solid var(--primary-color);
+        font-size: 50px;
+        text-align: right;
+        justify-content: flex-start;
+        width: 30%;
+        padding-right: 20px;
+        flex: 0 0 20%;
+        /* margin-left: 30px; */
+        flex-wrap: nowrap;
+    }
+ }
