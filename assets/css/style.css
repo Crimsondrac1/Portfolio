@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 :root {
@@ -25,11 +25,11 @@ a:link {
 }
 
 a:visited {
-    color: rgb(93, 187, 156);
+    color: #5dbb9c;
 }
 
 a:hover {
-    color: rgb(158, 255, 145);
+    color: #9eff91;
 }
 
 /* Start Header */
@@ -146,6 +146,7 @@ header nav ul li a:hover {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    flex: 1 1 20%;
     width: 90%;
     /* align-items: stretch; */
     /* justify-content: space-around; */
@@ -167,7 +168,8 @@ header nav ul li a:hover {
     flex: 3 3 80%;    
     padding-left: 20px;
     font-size: 20px;
-    width: 100%;
+    width: 55vw;
+    flex: 1 1 20%;
     text-align: justify;
     flex-wrap: wrap;
     align-items: flex-end;
@@ -221,14 +223,10 @@ header nav ul li a:hover {
     flex-direction: row;
 }
 
-/* .proj1 {
-    height: 440px;
-} */
-
-.proj1 img {
+.proj1  {
     /* position: relative; */
     /* display: flex;  */
-    width: 100%;
+    width: 98%;
     height: auto;
     flex: 2 0 50%;
     justify-content: space-between;
@@ -240,15 +238,14 @@ header nav ul li a:hover {
     margin: 10px;
 }
 
-.proj1 img:hover {
+.proj1:hover {
     opacity: 1;
     transition: .5s ease;
 }
 
-/* .proj1:hover {
-    opacity: 1;
-    transition: .5s ease;
-} */
+.proj1 img {
+    border-radius: 30px;
+}
 
 h3 {
     /* position: relative; */
@@ -273,16 +270,7 @@ h3 {
 /* End Work Styles */
 
 /* START Project2 */
-
 .proj2 {
-    /* border: 1px solid white; */
-    /* display: flex; */
-    width: 49%;
-    margin: 5px 0px 5px 0px;
-    justify-content: flex-start;
-}
-
-.proj2 img {
     
     /* position: relative; */
     /* display: flex; */
@@ -298,9 +286,13 @@ h3 {
     /* flex-wrap: nowrap; */
 }
 
-.proj2 img:hover {
+.proj2:hover {
     opacity: 1;
     transition: .5s ease;
+}
+
+.proj2 img {
+    border-radius: 30px;
 }
 
 /* Start Contact Me */
@@ -312,7 +304,7 @@ h3 {
     display: flex;
     width: 90%;
     /* height: 180px; */
-    align-items: center;
+    /* align-items: center; */
     /* justify-content: center; */
 }
 
@@ -323,26 +315,11 @@ h3 {
     text-align: right;
     justify-content: flex-end;
     width: 100%;
-    padding: 0px 30px 0px 10px;    
-    flex: 1 1 28%;
-    margin-left: 7px;
+    padding: 0px 30px 0px 0px;    
+    flex: 2 2 35%;
+    margin-left: 17px;
     flex-wrap: nowrap;
 }
-
-/* .contact-me {
-    width: 450px;
-    border-right: 5px solid var(--primary-color);
-    font-size: 50px;
-    text-align: right;
-    justify-content: flex-start;
-    width: 30%;
-    padding: 0px 2
-    0px 0px 20px;
-    
-    flex: 0 0 20%;
-    margin-left: 30px;
-    flex-wrap: nowrap;
-} */
 
 .info-box {
     display: flex;
@@ -359,6 +336,9 @@ h3 {
 }
 
 .link1 {
+    display: flex;
+    align-content: center;
+    margin: auto 0 auto 0;
     /* padding: 10px; */
     /* margin: 10px; */
     border-bottom: 4px solid var(--primary-color);
@@ -383,8 +363,8 @@ footer h4 {
 
 /* End Footer */
 
-@media screen and (max-width: 912px) {
-    
+@media only screen and (max-width: 912px){
+        
     header nav ul li a {
         padding: 10px 15px;
         font-weight: lighter;
@@ -402,10 +382,10 @@ footer h4 {
 
     .info-box {
         width: 100%;
-        flex: 1 0 20%;
+        flex: 1 1 20%;
         text-align: center;
         /* border: 1px solid white; */
-        justify-content: center;
+        justify-content: space-between;
         /* flex: 1 0 100%; */
         font-size: 2vw;
         /* padding-right: 100px; */
@@ -418,22 +398,133 @@ footer h4 {
         /* border: 1px solid white; */
         /* margin-left: 100px; */
         display: flex;
-        width: 98%;
-        height: 180px;
+        width: 90%;
+        /* height: 180px; */
         align-items: center;
         justify-content: center;
     }
     
     .contact h2 {
-        /* border: 1px solid white; */
+        display: flex;
         border-right: 5px solid var(--primary-color);
-        font-size: 50px;
+        font-size: 3vw;
         text-align: right;
-        justify-content: flex-start;
-        width: 30%;
+        justify-content: flex-end;
+        width: 40%;
         padding-right: 20px;
-        flex: 0 0 20%;
+        flex: 1 1 20%;
         /* margin-left: 30px; */
         flex-wrap: nowrap;
     }
+
+    .about h2 {
+        flex: 1 1 20%;
+        /* border: 1px solid white; */
+        display: flex;
+        font-size: 3vw;
+        text-align: right;
+        justify-content: flex-end;
+        width: 30%;
+        padding-right: 20px;
+        /* margin-left: 50px; */
+    }
+
+    .work h2 {
+        flex: 2 2 20%;
+        /* border: 1px solid white; */
+        display: flex;
+        font-size: 3vw;
+        text-align: right;
+        justify-content: flex-end;
+        width: 30%;
+        padding-right: 20px;
+        /* margin-left: 50px; */
+    }
+    
  }
+
+ @media only screen and (max-width: 768px){
+
+    .about {
+        /* border: 1px solid white; */
+        /* margin-left: 100px; */
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        /* display: flex; */
+        /* width: 90%; */
+        /* align-items: stretch; */
+        /* justify-content: space-around; */
+    }
+
+    .aboutSec {
+        border-left: 5px solid var(--primary-color);
+        margin-bottom: 10px;
+        width: 70%;
+    }
+
+    .info-box {
+        width: 100%;
+        flex: 1 1 20%;
+        text-align: center;
+        /* border: 1px solid white; */
+        justify-content: space-between;
+        /* flex: 1 0 100%; */
+        font-size: 2vw;
+        /* padding-right: 100px; */
+        padding-bottom: 5px;
+        border-bottom: 4px solid var(--primary-color);
+    }
+    .contact {
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid white; */
+        /* margin-left: 100px; */
+        display: flex;
+        width: 90%;
+        /* height: 180px; */
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact h2 {
+        display: flex;
+        border-right: 5px solid var(--primary-color);
+        font-size: 3vw;
+        text-align: right;
+        justify-content: flex-end;
+        width: 40%;
+        padding-right: 20px;
+        flex: 1 1 20%;
+        /* margin-left: 30px; */
+        flex-wrap: nowrap;
+    }
+
+    .about h2 {
+        flex: 1 1 20%;
+        /* border: 1px solid white; */
+        display: flex;
+        font-size: 3vw;
+        text-align: right;
+        justify-content:center;
+        width: 50%;
+        padding-right: 20px;
+        /* margin-left: 50px; */
+    }
+
+    .work h2 {
+        flex: 2 2 20%;
+        /* border: 1px solid white; */
+        display: flex;
+        font-size: 3vw;
+        text-align: right;
+        justify-content: flex-end;
+        width: 30%;
+        padding-right: 20px;
+        /* margin-left: 50px; */
+    }
+    
+ }
+    
+
+    
+ 
