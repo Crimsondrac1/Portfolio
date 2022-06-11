@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 :root {
@@ -96,8 +96,9 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.65vw;
+    /* font-size: 1.55vw; */
+    text-shadow: 0 0 10px #00000080;
 }
 
 header nav ul li a:hover {
@@ -107,9 +108,6 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
-section {
-    padding: 60px;
-}
 /* End Header */
 
 /* Start Hero Style */
@@ -122,7 +120,8 @@ section {
     flex-wrap: wrap;
     align-items: flex-end;
     background-attachment: fixed;
-    height: 500px;
+    margin-bottom: 20px;
+    /* height: 500px; */
 }
 
 .hero p {
@@ -134,7 +133,7 @@ section {
     color: rgb(0, 253, 0);
     font-size: 22px;
     justify-content: flex-end;
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
     opacity: 0.5;
 }
 /* End Hero */
@@ -165,8 +164,7 @@ section {
 }
 
 .about p {
-    flex: 3 3 80%;
-    
+    flex: 3 3 80%;    
     padding-left: 20px;
     font-size: 20px;
     width: 100%;
@@ -181,6 +179,7 @@ section {
 
 .aboutSec {
     border-left: 5px solid var(--primary-color);
+    margin-bottom: 10px;
 }
 
 /* End About Styles */
@@ -194,23 +193,22 @@ section {
     display: flex;
     /* margin-left: 100px; */
     width: 90%;
-    align-items: stretch;
-    justify-content: center;
-    flex-wrap: nowrap;
+    /* align-items: stretch; */
+    /* justify-content: center; */
+    /* flex-wrap: nowrap; */
     
 }
 
 .work h2 {
-    
+    flex: 1 1 20%;
     /* border: 1px solid white; */
+    display: flex;
     font-size: 40px;
     text-align: right;
     justify-content: flex-end;
     width: 30%;
     padding-right: 20px;
-    flex: 0 0 20%;
     /* margin-left: 50px; */
-    flex-wrap: nowrap;
 }
 
 .projects {
@@ -223,9 +221,9 @@ section {
     flex-direction: row;
 }
 
-.proj1 {
+/* .proj1 {
     height: 440px;
-}
+} */
 
 .proj1 img {
     /* position: relative; */
@@ -239,6 +237,7 @@ section {
     opacity: .5;
     transition: .5s ease;
     border-radius: 30px;
+    margin: 10px;
 }
 
 .proj1 img:hover {
@@ -251,12 +250,12 @@ section {
     transition: .5s ease;
 } */
 
-.proj1 h3 {
-    position: relative;
-    bottom: 115px;
-    left: 60px;
+h3 {
+    /* position: relative; */
+    /* bottom: 115px; */
+    /* left: 60px; */
     background-color: var(--bkg-color);
-    width: 150px;
+    /* width: 150px; */
     opacity: .8;
     fill-opacity: var(--bkg-Scolor);
     display: flex;
@@ -268,6 +267,7 @@ section {
     border: 2px solid var(--primary-color);
     line-height: 1.5;
     text-align: center;
+    margin: 10px;
 }
 
 /* End Work Styles */
@@ -276,7 +276,7 @@ section {
 
 .proj2 {
     /* border: 1px solid white; */
-    display: flex;
+    /* display: flex; */
     width: 49%;
     margin: 5px 0px 5px 0px;
     justify-content: flex-start;
@@ -303,84 +303,6 @@ section {
     transition: .5s ease;
 }
 
-/* .proj2:hover {
-    opacity: 1;
-    transition: .5s ease;
-} */
-
-.proj2 h3 {
-    position: relative;
-    bottom: 120px;
-    left: 50px;
-    background-color: var(--bkg-color);
-    width: 180px;
-    height: 80px;
-    opacity: .8;
-    fill-opacity: var(--bkg-color); 
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 30px;
-    border: 2px solid var(--primary-color);
-    text-align: center;
-    flex-wrap: wrap;
-}
-.proj3 {
-    /* border: 1px solid white; */
-    display: flex;
-    width: 49%;
-    margin: 5px 0px 5px 0px;
-    justify-content: flex-start;
-}
-
-.proj3 img {
-    
-    /* position: relative; */
-    /* display: flex; */
-    width: 100%;
-    /* max-width: 30%; */
-    height: auto; 
-    flex: 0 0 50%;
-    /* justify-content: space-between; */
-    /* margin-left: 20px; */
-    opacity: .5;
-    transition: .5s ease;
-    border-radius: 30px;
-    /* flex-wrap: nowrap; */
-}
-
-.proj3 img:hover {
-    opacity: 1;
-    transition: .5s ease;
-}
-
-/* .proj2:hover {
-    opacity: 1;
-    transition: .5s ease;
-} */
-
-.proj3 h3 {
-    position: relative;
-    bottom: -180px;
-    left: -480px;
-    background-color: var(--bkg-color);
-    width: 180px;
-    height: 80px;
-    opacity: .8;
-    fill-opacity: var(--bkg-color); 
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 30px;
-    border: 2px solid var(--primary-color);
-    text-align: center;
-    flex-wrap: wrap;
-}
-
 /* Start Contact Me */
 .contact {
     margin-left: auto;
@@ -388,68 +310,57 @@ section {
     /* border: 1px solid white; */
     /* margin-left: 100px; */
     display: flex;
-    width: 80%;
-    height: 180px;
+    width: 90%;
+    /* height: 180px; */
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .contact h2 {
-    /* border: 1px solid white; */
+    display: flex;
+    border-right: 5px solid var(--primary-color);
+    font-size: 40px;
+    text-align: right;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0px 30px 0px 10px;    
+    flex: 1 1 28%;
+    margin-left: 7px;
+    flex-wrap: nowrap;
+}
+
+/* .contact-me {
+    width: 450px;
     border-right: 5px solid var(--primary-color);
     font-size: 50px;
     text-align: right;
     justify-content: flex-start;
     width: 30%;
-    padding-right: 20px;
-    flex: 0 0 20%;
-    /* margin-left: 30px; */
-    flex-wrap: nowrap;
-}
-
-.phone {
-    /* border: 1px solid white; */
-    justify-content: center;
-    text-align: center;
-    flex: 1 0 20%;
-    align-items: center;
-    align-self: center;
-    font-size: 24px;
-    /* height: 50%; */    
-}
-
-.phone a {
-    padding-bottom: 5px;
-    border-bottom: 4px solid var(--primary-color);
-}
-
-.email {
-    /* border: 1px solid white; */
-    justify-content: center;
-    flex: 1 0 20%;
-    font-size: 24px;
-     text-align: center;
-}
-.email a {
-    border-bottom: 4px solid var(--primary-color);
-    padding-bottom: 5px;
-}
-
-.link1, .link2 {
-    /* border: 1px solid white; */
-    width: 100%;
-    flex: 1 0 20%;
-    text-align: center;
-}
-
-.link1 a, .link2 a {
+    padding: 0px 2
+    0px 0px 20px;
     
+    flex: 0 0 20%;
+    margin-left: 30px;
+    flex-wrap: nowrap;
+} */
+
+.info-box {
+    display: flex;
+    justify-content: space-around;
+    /* width: 20%; */
+    flex: 1 0 20%;
+    text-align: center;
     /* border: 1px solid white; */
-    justify-content: center;
-    /* flex: 1 0 100%; */
-    font-size: 24px;
-    /* padding-right: 100px; */
-    padding-bottom: 5px;
+    flex: 1 2 100%;
+    font-size: 1.3vw;
+    /* padding-right: 10px;
+    padding-bottom: 5px; */
+
+}
+
+.link1 {
+    /* padding: 10px; */
+    /* margin: 10px; */
     border-bottom: 4px solid var(--primary-color);
 }
 
@@ -471,3 +382,58 @@ footer h4 {
 }
 
 /* End Footer */
+
+@media screen and (max-width: 912px) {
+    
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 3vw;
+        /* font-size: 1.55vw; */
+        text-shadow: 0 0 10px #00000080;
+    }
+    
+    header nav ul li a:hover {
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        border-radius: 15px;
+        text-shadow: none;
+    }
+
+    .info-box {
+        width: 100%;
+        flex: 1 0 20%;
+        text-align: center;
+        /* border: 1px solid white; */
+        justify-content: center;
+        /* flex: 1 0 100%; */
+        font-size: 2vw;
+        /* padding-right: 100px; */
+        padding-bottom: 5px;
+        border-bottom: 4px solid var(--primary-color);
+    }
+    .contact {
+        margin-left: auto;
+        margin-right: auto;
+        /* border: 1px solid white; */
+        /* margin-left: 100px; */
+        display: flex;
+        width: 98%;
+        height: 180px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact h2 {
+        /* border: 1px solid white; */
+        border-right: 5px solid var(--primary-color);
+        font-size: 50px;
+        text-align: right;
+        justify-content: flex-start;
+        width: 30%;
+        padding-right: 20px;
+        flex: 0 0 20%;
+        /* margin-left: 30px; */
+        flex-wrap: nowrap;
+    }
+ }
