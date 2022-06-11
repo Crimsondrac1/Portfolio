@@ -282,6 +282,8 @@ h3 {
     width: 49%;
     margin: 0px 5px 0px 5px;
     height: 245px;
+    opacity: .5;
+    transition: .5s ease;
     /* justify-content: flex-start; */
 }
 
@@ -295,13 +297,12 @@ h3 {
     flex: 0 1 100%;
     justify-content: space-between;
     /* margin-left: 20px; */
-    opacity: .5;
-    transition: .5s ease;
+    
     border-radius: 30px;
     /* flex-wrap: nowrap; */
 }
 
-.proj2 img:hover {
+.proj2:hover {
     opacity: 1;
     transition: .5s ease;
 }
